@@ -1,3 +1,5 @@
+// this has the basicc components
+
 function ClipSearch() {
 
       return (
