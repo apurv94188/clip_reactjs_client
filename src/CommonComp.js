@@ -12,7 +12,9 @@ function ClipSearch() {
       );
 }
 
-function ClipAdd() {
+
+
+function ClipAdd(props) {
 
       return (
             <div className="AddClip">
@@ -21,7 +23,7 @@ function ClipAdd() {
                   <input type='text' name='ClipName'></input><br/><br/>
                   <label>Clip Content: </label>
                   <input type='textarea' name='ClipContent'></input><br/><br/>
-                  <button className="AddClip">Add Clip</button>
+                  <button className="AddClip" onClick={props.submitHandler}>Add Clip</button>
             </div>
       );
 }
